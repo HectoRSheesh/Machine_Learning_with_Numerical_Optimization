@@ -31,6 +31,9 @@ while loop:
 print("x*:",x)
 Hessian = hessianf(x)
 eigenvalue, eigenvector = np.linalg.eigh(Hessian)
+print("Eigenvalues:", eigenvalue)
+print("Eigenvectors:")
+print(eigenvector)
 
 if min(eigenvalue) > 0:
     print("x is minimum")
