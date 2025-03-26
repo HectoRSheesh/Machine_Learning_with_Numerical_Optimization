@@ -1,5 +1,6 @@
 import numpy as np
 import math
+import matplotlib.pyplot as plt
 
 def f(x):
     f = 3 + (x[0]-1.5 * x[1])**2 + (x[1] - 2)**2
