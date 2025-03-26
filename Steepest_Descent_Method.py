@@ -86,4 +86,11 @@ if C4:
 
 
 
-
+# Visualization of optimization path
+plt.plot(x1, x2, label="Optimization Path")
+plt.scatter(x1, x2, s=5, c='red', label="Steps")
+plt.xlabel("x1")
+plt.ylabel("x2")
+plt.title("Steepest Descent Path")
+plt.legend()
+plt.show()
