@@ -11,7 +11,8 @@ def gradf(x):
     gradf = np.array(2*(x[0]-1.5*x[1]), -3 * (x[0]-1.5*x[1])+ 2* (x[1]-2)])
     return gradf
 
-def GSmain (f,xk,pk):
+# Golden Section method to find step size
+def GSmain(f, xk, pk):
     xalt = 0
     xüst = 1
     dx =  0.00001
