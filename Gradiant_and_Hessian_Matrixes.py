@@ -1,14 +1,14 @@
 #Created by Ozan Bali
 # 03.19.2025
-# Finding Root's Situation With Gradiant and Hessien Matries
+# Finding Root's Situation With Gradiant and Hessien Matrixes
 
 import numpy as np
 def function(x):
-    f = ( 1 * x[0]**3) / 3 + (1 * x[0]**2)  / 2 + 2 * x[0] * x[1] + (1* x[1]**2) / 2 - x[1] + 9 #Function
+    f = (x[0]**3) / 3 + (x[0]**2) / 2 + 2* (x[0]*x[1])  + (x[1]**2) / 2 - x[1] + 9#Function
     return f
 
 def gradf(x):
-    gradf = [(x[0]**2 + x[0] + 2*x[1]), (2 * x[0] + x[1] - 1 )] #Function's Gradiant Matrix Form
+    gradf = [(x[0]**2 + x[0] + 2*x[1]), (2*x[0] + x[1] - 1)] #Function's Gradiant Matrix Form
     return gradf
 
 def hessianf(x):
@@ -17,7 +17,7 @@ def hessianf(x):
 
 x = [1,1]
 i = 0 #Counter
-print("i:",i," f(x):",function(x))
+print("i:",i," x:",x ," f(x):",function(x))
 loop = True
 while loop:
     i += 1
@@ -28,7 +28,7 @@ while loop:
     if normGradf > 1e10:
         print("Gradient norm is too large, stopping the loop.")
         loop = False
-    print("i:",i," f(x):",function(x), "//Gradf//:",normGradf)
+    print("i:",i," x:",x,"f(x):",function(x), "//Gradf//:",normGradf)
     if normGradf < 1e-6:
         loop = False
 
