@@ -27,8 +27,10 @@ x1 = x_bottom + tau * (x_top - x_bottom)
 x2 = x_top - tau * (x_top - x_bottom)
 f1 = function(x1)
 f2 = function(x2)
-
+print("k:",k," x1:",round(x1,5)," x2:",round(x2,5)," f(x1):",round(function(x1),5)," f(x2):",round(function(x2),5))
 for k in range(N):
+
+    print("k:",k," x1:",round(x1,5)," x2:",round(x2,5)," f(x1):",round(function(x1),5)," f(x2):",round(function(x2),5))
     if f1 > f2:
         x_bottom = 1 * x1
         x1 = 1 * x2
@@ -44,4 +46,4 @@ for k in range(N):
         f1 = function(x1)
 
 result = 0.5 * (x1 + x2) #Result state
-print("x_root:",round(result,5)," f: ",round(function(result),5)," f1:",round(function_derivative(result),5))
+print("x_root:",round(result,5)," f: ",round(function(result),5)," f':",round(function_derivative(result),5))
