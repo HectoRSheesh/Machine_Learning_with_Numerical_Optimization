@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Objective function
 def f(x):
-    return 3 + (x[0] - 1.5 * x[1])**2 + (x[1] - 2)**2
+    return (x[0] - 2 * x[1] + x[2] + 1) ** 2 + (x[0] + x[1] - x[2] + 3) ** 2 + (-2 * x[0] + x[1] - x[2]) ** 2
 
 # Gradient of the function
 def gradf(x):

@@ -2,7 +2,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 
-from ornekFonksiyon2 import f, hessian
+from ornekFonksiyon2 import f
 from ornekFonksiyon2 import gradient as gradf
 
 

@@ -1,18 +1,18 @@
 import numpy as np
 
 def f(x):
-    f = (x[0] - 1.5)**2 + (x[1] - 2.5)**2
+    f = x[0]**2 - 2 * x[0] - 3 * x[1] * x[0] + 12 * x[1]#Function
     return f
 
 def grad(x):
-    grad = [2*(x[0] - 1.5),2*(x[1] - 2.5)]
-    return grad
+    gradf = [( 2 * x[0] - 3 * x[1] - 2) , ( 12 - 3 * x[0])] #Function's Gradiant Matrix Form
+    return gradf
 
 def hessian(x):
-    hessian = np.array([[5,2],[2,1]])
-    return hessian
+    hessianf = np.array([[2,-3],[-3,0]]) #Funciton's Hessien matrix Form
+    return hessianf
 
-x = [4,3]
+x = [2,4]
 i = 0
 print("i:", i ," f(x):", f(x))
 loop = True

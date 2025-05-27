@@ -2,7 +2,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 
-from ornekFonksiyon2 import f, hessian
+from ornekFonksiyon2 import f
 from ornekFonksiyon2 import gradient as gradf
 
 
@@ -42,7 +42,7 @@ def GSmain(f, xk, pk):
 # --- STEP 1: Initialization ---
 
 # Set the starting point
-x = np.array([-5.4, 1.7])
+x = np.array([-1.5, -1.5])
 
 # Define the maximum number of iterations
 Nmax = 10000
